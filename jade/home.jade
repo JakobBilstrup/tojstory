@@ -1,0 +1,59 @@
+doctype html
+html(lang="da")
+  head
+    meta(charset='UTF-8')
+    meta(name='robots' content='noindex')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    title Hjem - TØJSTORY
+    link(rel='favicon' href='favicon.ico' type='image')
+    link(rel='stylesheet', href='css/base.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  body
+    input#sidebartoggler(type='checkbox', name='sidebartoggler', value='')
+    .page-wrap
+      span#social
+        a(target="_blank" href="https://www.instagram.com/tojstory/")
+          i.fa.fa-instagram
+        a(target="_blank" href="https://www.facebook.com/Tojstory")
+          i.fa.fa-facebook-square
+      label.toggle(for='sidebartoggler') ☰
+      a(href="index.html")
+        img#logo(src="img/tslogo.svg", alt="TØJSTORY LOGO")
+      .page-content
+        section#k1.row
+          img(src="img/historie/k1.svg", alt="Skoene I paris" class="illustration")
+          article
+            h2 Kapitel 1
+            section
+              h3.historyhead Der var engang...
+              p.historytext En gang for længe siden stod jeg på en hylde i Paris, men var så heldig at finde en fantastisk ejer! Hun tog mig med på en date og på denne date, skete der noget fantastisk, hun blev forlovet!
+
+        section#k2.row
+          article
+            h2 Kapitel 2
+            section
+              h3.historyhead Fortabt
+              p.historytext Vi kom hjem til Danmark og jeg vidste ikke hvad jeg skulle gøre af mig selv, jeg var lidt for fin til at bruges en aften i byen og jeg endte med at tilbringe meget af min tid i skabet sammen med alle de andre sko
+          img(src="img/historie/k2.svg", alt="Skoene er fortabt" class="illustration")
+
+        section#k3.row
+          img(src="img/historie/k3.svg", alt="Skoene finder tøjstory" class="illustration")
+          article
+            h2 Kapitel 3
+            section
+              h3.historyhead Tøjstory
+              p.historytext En aften besluttede jeg mig for at jeg skulle prøve at komme videre og finde et nyt eventyr, så jeg fandt butikken Tøjstory 
+
+        section#k4.row
+          article
+            h2 Kapitel 4
+            section
+              h3.historyhead Dig og Mig?
+              p.historytext Jeg står nu i Tøjstory og venter på et nyt eventyr, skal <b>du</b> være med til at skabe det?
+              a.cta(target="_blank" href="https://www.instagram.com/tojstory/") Shop mig!
+          img(src="img/historie/k4.svg", alt="Skoene venter på nye eventyr" class="illustration")
+      include ./includes/nav.jade
+      include ./includes/footer.jade
+
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src="js/min/rearrange-min.js")

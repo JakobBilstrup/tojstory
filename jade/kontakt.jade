@@ -1,0 +1,52 @@
+doctype html
+html(lang="da")
+  head
+    meta(charset='UTF-8')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    title Kontakt - TØJSTORY
+    link(rel='favicon' href='favicon.ico' type='image')
+    link(rel='stylesheet', href='css/base.css')
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  body
+    input#sidebartoggler(type='checkbox', name='sidebartoggler', value='')
+    .page-wrap
+      label.toggle(for='sidebartoggler') ☰
+      a(href="index.html")
+        img#logo(src="img/tslogo.svg", alt="TØJSTORY LOGO")
+      .page-content
+        section#kontakt
+          h1 Kontakt
+          p Du er meget velkommen til at besøge os i vores 3 butikker
+          article
+            .maps#mapAalborg 
+            h2 Aalborg
+            p
+              span 
+              b Boulevarden 1, 9000 Aalborg
+              span 
+              b +45 60 66 24 09
+
+          article
+            .maps#mapAarhus 
+            h2 Aarhus
+            p
+              span 
+              b Guldsmedegade 1, 8000 Aarhus
+              span 
+              b +45 60 66 24 09
+
+          article
+            .maps#mapViborg
+            h2 Viborg
+            p
+              span 
+              b Vestergade 3, 8000 Aarhus
+              span 
+              b +45 60 66 24 09
+
+          include ./includes/email.jade
+        include ./includes/nav.jade
+      include ./includes/footer.jade
+    script(src="https://maps.googleapis.com/maps/api/js")
+    script(src="js/min/googlemaps-min.js")

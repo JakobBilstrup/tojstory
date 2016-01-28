@@ -1,0 +1,1 @@
+$("#sidebartoggler").prop(":checked")?$("footer").hide():$("footer").show();

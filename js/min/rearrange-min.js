@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).resize(function(){$(window).width()<=768?($("#k2 article").insertAfter("#k2 img"),$("#k4 article").insertAfter("#k4 img")):($("#k2 article").insertBefore("#k2 img"),$("#k4 article").insertBefore("#k4 img"))})});

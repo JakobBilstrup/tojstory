@@ -1,0 +1,10 @@
+form(method='post', action='jade/includes/email.php')
+  label Navn
+  input(name='name', placeholder='Dit Navn')
+  label Email
+  input(name='email', type='email', placeholder='Din Email')
+  label Besked
+  textarea(name='message', placeholder='Din Besked')
+  input#submit(name='submit', type='submit', value='Submit')
+  label *Hvad er 2+2? (Anti-spam)
+  input(name='human', placeholder='Antispam svar')

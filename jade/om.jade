@@ -1,0 +1,30 @@
+doctype html
+html(lang="da")
+  head
+    meta(charset='UTF-8')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    title Bag - TØJSTORY
+    link(rel='favicon' href='favicon.ico' type='image')
+    link(rel='stylesheet', href='css/base.css')
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  body
+    input#sidebartoggler(type='checkbox', name='sidebartoggler', value='')
+    .page-wrap
+      label.toggle(for='sidebartoggler') ☰
+      a(href="index.html")
+        img#logo(src="img/tslogo.svg", alt="TØJSTORY LOGO")
+      .page-content
+        section#om
+          h1 Bag Tøjstory
+          p Har du tøj liggende som har brug for nyt liv? <br> Så kan du aflevere det til os & tjene 40 procent af salgsprisen.
+          article
+            img(src="img/toejstory.jpg" alt="") 
+            h2 Mening & Formål
+            p Hos tøjstory får du tøj med sjæl, vi bygger vores grundlagde sammen med vores bruger, alt vores tøj er nøje udvalgt blandt det der bliver indleveret og vi har altid noget spændende på vores hylder, derudover er vi også bæredygtige i form af at minimerer tøjspild.
+          article
+            img(src="img/isabellaogtheis.jpg" alt="") 
+            h2 Isabella & Theis
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero corporis ad odio ducimus consequuntur, omnis, amet nostrum sit. Perferendis qui molestias iure eaque rerum voluptatem nemo quos, ad ipsam inventore.
+      include ./includes/nav.jade
+      include ./includes/footer.jade

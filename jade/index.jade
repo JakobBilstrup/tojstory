@@ -1,0 +1,24 @@
+doctype html
+html(lang="da") 
+    head
+        meta(charset='UTF-8')
+        meta(name='robots' content='noindex')
+        meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+        title TØJSTORY
+        link(rel='favicon' href='favicon.ico' type='image')
+        link(rel='stylesheet', href='css/base.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    body#splashpage
+        section.splashpagesection#instashop
+            a(target="_blank" href="https://www.instagram.com/tojstory/")
+                img(src="img/splashpage/instashop.svg", alt="Illustration af dame med pose")
+                h1 Instashop
+        section.splashpagesection#website
+            a(href="home.html")
+                img(src="img/splashpage/website.svg", alt="Illustration af butik")
+                h1 Story
+        section.splashpagesection#indlevering
+            a(href="indlevering.html")
+                img(src="img/splashpage/indlevering.svg", alt="Illustration af tøj på bøjler")
+                h1 Indlevering
+        script(src="bower_components/jquery/dist/jquery.min.js")

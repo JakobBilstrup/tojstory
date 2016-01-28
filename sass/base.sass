@@ -1,0 +1,415 @@
+@import 'bourbon'
+@import 'normalize.css'
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface)
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700)
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed)
+
+$splash-font: 'Roboto Condensed', sans-serif
+
+$head-font: 'Playfair Display', serif
+$suphead-font: 'Libre Baskerville', serif
+$body-font: 'Libre Baskerville', serif
+
+html, body
+  margin: 0
+  padding: 0
+  font-smoothing: antialiased
+  font-weight: 400
+  color: #626262
+
+.bshadow
+  box-shadow: 5px 5px 10px 1px #B0B0B0
+
+#logo
+  margin-left: auto
+  margin-right: auto
+  +size(300px auto)
+#social
+  display: block
+  position: absolute
+  left: 100px
+  i
+    padding: 20px 20px 0px 20px
+    font-size: 30px
+    color: #3F3F3F
+    &:hover
+      color: #000000
+
+
+.page-wrap
+  text-align: center
+  padding-top: 20px
+
+.page-content
+  +size(90% auto)
+  padding: 0 5%
+  position: relative
+  z-index: 0
+  text-align: left
+  +transition(1s)
+
+.row
+  article
+    display: inline-block
+    +size(45% 500px)
+    vertical-align: top
+    margin: 2.5%
+    position: relative
+    background-color: #F8F8F8
+    @extend .bshadow
+
+    h2
+      position: absolute
+      left: 100px
+      font-size: 3em
+      color: #E6E6E6
+      font-family: $head-font
+
+    section
+      position: absolute
+      bottom: 0
+      right: 0
+      +size(70% 45%)
+      text-align: center
+
+      .historyhead
+        font-family: $suphead-font
+        text-align: left
+        font-size: 2em
+        margin-bottom: 2px
+        text-transform: uppercase
+
+      .historytext
+        font-family: $body-font
+        margin-top: 2px
+        text-align: left
+        margin-right: 40px
+
+
+  img
+    display: inline-block
+    +size(45% 500px)
+    vertical-align: top
+
+
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: #ECECEC
+  +transition(1s)
+  +position(fixed, 20px 20px null nul)
+  z-index: 1
+  cursor: pointer
+  background: #434343
+  border: 2px solid
+  border-radius: 50%
+  padding: 0 10px 5px
+  text-align: center
+
+aside
+  +position(fixed, 0px -100vw 0px null)
+  width: 100vw
+  background: white
+  z-index: 0
+  +transition(1s)
+
+  img
+    +position(absolute, 20% null null 20%)
+    display: inline
+    width: 50%
+
+  nav
+    float: right
+    +margin(300px 100px 0 0)
+    text-align: left
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li
+
+    font-size: 26px
+    margin: 0
+    margin-bottom: 30px
+    -webkit-font-smoothing: antialiased
+    cursor: pointer
+    font-family: $head-font
+
+    a
+      text-decoration: none
+      color: #424242
+
+      &:hover
+        color: #585858
+
+#navSocial
+  display: none
+
+#k4
+  .cta
+    color: white
+    text-decoration: none
+    text-align: center
+    +padding(4% 20%)
+    border-radius: 15px
+    background-color: #E95D47
+    border: 2px solid transparent
+    font-family: 'Montserrat', sans-serif
+    +position(absolute, null auto null 15%)
+
+
+#sidebartoggler
+  display: none
+
+  &:checked + .page-wrap
+
+    aside
+      right: 0px
+
+
+/* KONTAKT SIDE */
+
+section#kontakt
+  text-align: center
+  margin-bottom: 170px
+  h1, p
+    text-align: center
+    color: #868686
+  article,form
+    display: inline-block
+    width: 30%
+    padding: 0 10px
+    margin-top: 20px
+    vertical-align: top
+    .maps
+      background-color: #ABABAB
+      +size(100% 300px)
+    p
+      text-align: left
+      span
+        display: block
+
+        &:nth-child(7)
+          margin-top: 30px
+  ul
+    text-align: left
+    list-style: none
+
+  form
+    input,textarea
+      display: block
+      width: 100%
+    #submit
+      width: 50%
+      +margin(null auto)
+
+/* OM SIDE */
+
+section#om
+  text-align: center
+  margin-bottom: 120px
+
+  h1
+    text-align: center
+    color: #868686
+
+  article
+    display: inline-block
+    width: 350px
+    padding: 0 5%
+    margin-top: 20px
+    vertical-align: top
+
+    img
+      width: 100%
+
+    h2
+      text-align: left
+    p
+      text-align: left
+      width: auto
+
+      span
+        display: block
+
+/* Indlevering */
+
+#indlevering
+  text-align: center
+  margin-bottom: 120px
+  h1
+    text-align: center
+  article
+    +size(280px 350px)
+    display: inline-block
+    margin: 100px 10px 10px 10px
+    background-color: #F0F0F0
+    border: 2px solid
+    border-radius: 20px
+    vertical-align: bottom
+    img
+      height: 45%
+      +position(relative, -80px null null null)
+    h2
+      +position(relative, -80px null null null)
+    span
+      +position(relative, -80px null null null)
+      padding: 0 10px
+      display: block
+
+/* Splashpage */
+body#splashpage
+  +size(100% auto)
+
+  background: url(../img/splashpage/splashbg.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+  overflow: hidden
+
+
+  .splashpagesection
+    display: inline-block
+    text-align: center
+    a
+      text-decoration: none
+      vertical-align: top
+      img
+        +size(70% auto)
+        margin-bottom: 20px
+      h1
+        text-transform: uppercase
+        color: #292929
+        font-family: $splash-font
+
+  section#instashop
+    background: rgba(247, 145, 140, .4)
+    +size(30% 100%)
+    padding-top: 20%
+    img
+      margin-top: 20%
+  section#website
+    +size(40% 100%)
+    padding-top: 15%
+  section#indlevering
+    background: rgba(140, 188, 247, .4)
+    +size(30% 100%)
+    padding-top: 20%
+    img
+      margin-top: 20%
+
+/* Footer */
+
+footer
+  bottom: 0
+  background-color: #F3F3F3
+  +size(100% 170px)
+  margin-top: 20px
+  text-align: center
+  border-top: 1px solid #BFBFBF
+  position: relative
+  text-align: center
+  z-index: -1
+  height: auto
+
+  small
+    display: block
+
+  article
+    display: inline-block
+    +margin(5px 50px 20px)
+    text-align: left
+    h3
+      font-size: 30px
+      +margin(5px 0 0)
+    ul
+      list-style: none
+      padding-left: 0
+      margin-bottom: 0px
+
+@media screen and (max-width : 1188px)
+  .row
+    article
+      section
+        width: 95%
+
+@media screen and (max-width : 768px)
+  #logo
+    +size(250px auto)
+  #social
+    display: none
+  .row
+    article
+      display: block
+      +size(95% 300px)
+      h2
+        left: 50px
+      section
+        width: 90%
+        bottom: 50px
+        margin-bottom: 30px
+    img
+      display: block
+      width: 95%
+      height: initial
+  aside
+    h1
+      font-size: 50px
+      left: 10%
+  #navSocial
+    display: inline
+    i
+      padding: 20px
+  #om > p
+    display: inline-block
+    text-align: center
+    margin: 0 auto
+    padding: 0 5%
+    width: 350px
+  #kontakt > article,form
+    display: block
+    text-align: center
+    margin: 0 auto
+    padding: 0 5%
+    width: 100% !important
+    p
+      text-align: center
+
+@media screen and (max-width : 450px)
+  #k1 > article > section > p
+    font-size: 85%
+  body
+    div
+      aside
+        nav
+          margin-top: 150px
+          ul
+            li
+              margin-bottom: 10px
+
+@media screen and (max-width : 1000px)
+  section#instashop
+    padding-top: 10%
+    img
+      margin-top: 10%
+  section#indlevering
+    padding-top: 5%
+  section#indlevering
+    padding-top: 10%
+    img
+      margin-top: 10%
+
+@media screen and (max-width : 800px)
+  .splashpagesection > a > h1
+    font-size: 20px
+
+@media screen and (min-width : 1100px)
+  .splashpagesection
+    padding-top: 7% !important
+  #website
+    padding-top: 2% !important

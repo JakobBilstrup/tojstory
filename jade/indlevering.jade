@@ -1,0 +1,38 @@
+doctype html
+html(lang="da")
+  head
+    meta(charset='UTF-8')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    title Indlevering - TØJSTORY
+    link(rel='favicon' href='favicon.ico' type='image')
+    link(rel='stylesheet', href='css/base.css')
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  body
+    input#sidebartoggler(type='checkbox', name='sidebartoggler', value='')
+    .page-wrap
+      label.toggle(for='sidebartoggler') ☰
+      a(href="index.html")
+        img#logo(src="img/tslogo.svg", alt="TØJSTORY LOGO")
+      .page-content
+        section#indlevering
+          h1 Indlevering
+          article
+            img(src="img/dress.svg", alt="Dress")
+            h2 Trin 1.
+            p 
+              span Hvis jeg hænger lidt for meget <b>derhjemme i garderoben</b>, og du syntes det er tid til at fortsætte min historie, så kom ind i Tøjstory efter du har <b>renset</b> og <b>strøget</b> mig og tjekket <b>min stand</b>. i tøjstory vil de helst have at jeg er fra mærkerne malene <b>Birger</b>, Acne, <b>Danny</b> og opefter.
+
+          article
+            img(src="img/women.svg", alt="")
+            h2 Trin 2.
+            p
+              span Tag mig med i <b>butikken mandag eller tirsdag</b>, der får dig og personalet have en lille <b>hyggelig</b> snak om min historie og de vil også vurder om jeg <b>passer ind i butikken</b> eller om jeg skal <b>videregives</b> andre steder. 
+          article
+            img(src="img/hanger.svg", alt="")
+            h2 Trin 3.
+            p
+              span ja nu hænger jeg noget så <b>fint</b> i forretning og venter på at <b>min historie</b> kan <b>fortsætte</b>, når jeg bliver <b>solgt</b> til en ny <b>dejlig kunde</b> får du <b>40 procent</b> af den pris tøjstory og dig har <b>aftalt</b> på forhånd.  
+
+        include ./includes/nav.jade
+      include ./includes/footer.jade
