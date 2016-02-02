@@ -1,2 +1,2 @@
 # Tøjstory
- Testing Gitbug for a new project
+ Testing Github for a new project
